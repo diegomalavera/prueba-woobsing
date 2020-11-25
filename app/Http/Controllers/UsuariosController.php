@@ -77,8 +77,6 @@ class UsuariosController extends Controller
 
         $rols = Rols::all();
 
-        \Debugbar::info($user->name);
-
         return view('users.edit', compact('user', 'rols'));
     }
 
