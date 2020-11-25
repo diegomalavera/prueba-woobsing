@@ -12,6 +12,7 @@ class CheckEmailVerified extends Middleware
     protected $except = [
         'verificacion',
         'logout',
+        'verificar'
     ];
 
     /**

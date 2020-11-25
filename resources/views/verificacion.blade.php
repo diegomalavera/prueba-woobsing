@@ -14,6 +14,12 @@
                     </div>
                     <div class="mt-6 text-gray-500">
                         {{ __('Pagina para verificación de usuario') }}
+                        <form action="{{ route('verify') }}" method="POST">
+                            @csrf
+                            <x-jet-button class="ml-4">
+                                {{ __('Verificar') }}
+                            </x-jet-button>
+                        </form>
                     </div>
                 </div>
             </div>

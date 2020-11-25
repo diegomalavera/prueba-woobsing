@@ -32,9 +32,8 @@ Route::middleware(['email_verified', 'last_login'])->group(function () {
             return view('dashboard');
         })->name('dashboard');
 
+        Route::post('verificar', 'App\Http\Controllers\MainController@verify')->name('verify');
+
         Route::resource('usuarios', App\Http\Controllers\UsuariosController::class);
     });
 });
-
-
-
